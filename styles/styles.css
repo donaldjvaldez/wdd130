@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-    --heading-background-color: darkblue;
+    --heading-background-color: rgb(73, 197, 206);
     --border: 1px solid black;
 }
 
@@ -20,12 +26,8 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: var(--border);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -33,19 +35,29 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 55px;
+
+}
+
 main img {
     width: 150px;
     height: auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 /* And this is a comment in CSS */
 
 p {
-    padding: 0;
+    margin: 1rem;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-background-color);
+    padding: 5rem;
 }
 
 img {
@@ -61,4 +73,17 @@ footer {
     margin: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: var(--heading-background-color);
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
