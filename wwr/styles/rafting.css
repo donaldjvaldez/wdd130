@@ -1,3 +1,15 @@
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lumanosimo-regular {
+    font-family: "Lumanosimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --primary-color: #FCE77D;
     /* Jasmin */
