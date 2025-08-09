@@ -15,7 +15,7 @@
     /* Jasmin */
     --secundary-color: #C8E8F9;
     /* Uranian blue */
-    --accent1-color: #F9BE77;
+    --accent1-color: #ffa500;
     /* Carrot orange */
     --accent2-color: #3F484A;
     /* Outer space */
@@ -156,9 +156,18 @@ footer {
     grid-template-columns: auto auto auto auto;
     gap: 1rem;
     text-align: left;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: var(--secundary-color);
     color: var(--accent2-color);
+    font-size: 12px;
+    border: 0;
+    padding: 0rem 1rem;
+}
+
+.socialmedia img {
+    width: 28px;
+    height: auto;
+    vertical-align: middle;
 }
 
 nav,
@@ -282,11 +291,121 @@ h1 {
 
 .radio-group {
     display: flex;
-    gap: 2rem; /* space between buttons */
+    gap: 2rem;
+    /* space between buttons */
     margin-bottom: 1rem;
 }
+
 .radio-group label {
     display: flex;
     align-items: center;
     font-size: 1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+}
+
+.hero-text-p {
+    position: absolute;
+    top: 60%;
+    /* adjust as needed */
+    left: 50%;
+    /* center horizontally */
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /* or as needed */
+    color: var(--primary-color);
+    /* or white for contrast */
+    text-align: center;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.7);
+    /* optional: semi-transparent background for readability */
+    padding: 0.25rem;
+    border-radius: 2px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Frequent Trips */
+.frequent-trips {
+    text-align: center;
+    padding: 2rem;
+}
+
+.trip-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+
+.trip-card {
+    background: #f9f9f9;
+    border: 2px solid var(--accent1-color);
+    padding: 1rem;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.trip-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Table */
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* Call to Action */
+.cta h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.cta {
+    background: var(--accent1-color);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+}
+
+.cta .btn {
+    display: inline-block;
+    background: white;
+    color: var(--accent1-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta .btn:hover {
+    background: #f1f1f1;
 }
